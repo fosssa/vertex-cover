@@ -1,0 +1,5 @@
+In the proposed algorithm we are trying to find an optimal or near optimal solution of the vertex cover problem because of the absence of a polynomial time solution for this NP-Complete problem.
+
+The selections of the vertices that will be part of the vertex cover rely on the value of support. Value of support is a value represents the sum of the degrees of the neighbors of the vertices.
+
+The algorithm starts by finding the degree of each vertex not yet selected in the vertex cover. The degree of the vertex is the number of adjacent neighbors for vertex. The second stage after finding the degrees is finding the support value for each vertex. The algorithm proceeds by finding a list that contains all vertices that have the minimum support value. The next step is to select the vertex with the maximum support value among the neighbors of the vertices of the minimum support value. After adding the vertex to the vertex cover, all adjacent edges to this vertex are deleted. The process continues until no more edges exist.
